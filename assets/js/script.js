@@ -140,33 +140,22 @@ new Splide( '#image-carousel', {
 
 document.getElementById('submit').addEventListener('click', function (e) {
   e.preventDefault();
-  const form = document.querySelector('form');
-  const name = document.querySelector('input[name="your-name"]').value;
-  const email = document.querySelector('input[name="your-email"]').value;
-  const message = document.querySelector('textarea[name="your-message"]').value;
-  const subject = document.querySelector('input[name="your-subject"]').value;
-  var data = {
-    'name': name,
-    'email': email,
-    'message': message,
-    'subject': subject
-  }
+  const form = document.forms['contact-form'];
+  document.getElementById('submit').disabled = true;
   
-  
-  fetch('https://script.google.com/macros/s/AKfycby6SI2LX3Qno6BPtKOv7Nu0QdhkUaT78Dse_NhMhhq52TT-_Uo7Ru9mMc9ZuKX_go_O/exec', {
+  fetch('https://script.google.com/macros/s/AKfycby3ZcxmaMEaFhpOL6yI6gdpx6DfwUWT6JITg4c4JE44q0K4KXrcWxdvuMKKBaYFVajh/exec', {
     method: 'POST',
-    data: data,
-    dataType: 'json',
-    headers: {
-      'Accept': 'application/json'
-    }
+    body: new FormData(form),
   }).then(response => {
     if (response.ok) {
       form.reset();
       alert('Thanks for your message!');
+      document.getElementById('submit').disabled = false;
     } else {
       alert('Oops! There was a problem submitting your form');
+      document.getElementById('submit').disabled = false;
     }
   });
+
 }
 );
