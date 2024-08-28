@@ -1048,7 +1048,7 @@ body {
    * FOOTER
    */
    
-  .footer-top .container { grid-template-columns: repeat(4, 1fr); }
+  .footer-top .container { grid-template-columns: repeat(3, 1fr); }
 
 }
 
@@ -1112,4 +1112,86 @@ body {
 
   .footer .logo img { width: 205px; }
 
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+
+/*----------------------------------------*/
+/*  17.	Contact Us  CSS
+/*----------------------------------------*/
+.contact-icons {
+  background-color: var(--bg-red-alpha-30);
+  padding: 50px 20px;
+}
+.office-city{
+background: #0a1520;
+padding: 40px 30px 20px;
+}
+.office-city h4{
+margin-bottom: 30px;
+font-weight: 600;
+}
+.single-icon {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-page{
+margin-bottom: 50px;
+}
+.contact-icon {
+  margin-bottom: 80px;
+  background: #131313ba;
+  padding: 50px 30px 30px;
+}
+.single-icon svg {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--bg-red-alpha-30);
+  background: var(--bg-red-alpha-30);
+  line-height: 77px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  color: #fff;
+  padding: 16px;
+}
+.single-icon svg:hover {
+  color: var(--bg-green);
+}
+.single-icon p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.contact-page-area {
+  background: #f1f1f1 none repeat scroll 0 0;
+  padding: 50px 0 70px;
+}
+.contact-form input[type="text"], .contact-form input[type="email"] {
+  border: 1px solid #131313ba;
+  border-radius: 3px;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+  background: #131313ba;
+  color: #fff;
+}
+.contact-form textarea#message {
+  border: 1px solid #131313ba;
+  border-radius: 3px;
+  height: 171px;
+  padding: 20px;
+  width: 100%;
+  background: #131313ba;
+  color: #fff;
+}
+.contact-inner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }

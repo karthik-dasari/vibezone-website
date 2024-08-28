@@ -12,12 +12,15 @@
   <title>Vibezone - Premium Esports Lounge</title>
   <meta name="title" content="Vibezone - Premium Esports Lounge">
   <meta name="description" content="Vibezone - Premium Esports Lounge">
-  <meta name="keywords" content="" >
 
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/Vibezone BG Free logo.png" type="image/svg+xml">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
   <!-- 
     - google font link
@@ -27,7 +30,12 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+    integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- 
     - custom css link
   -->
@@ -38,7 +46,8 @@
   -->
   <link rel="preload" as="image" href="./assets/images/hero-banner.png">
   <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
-
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 </head>
 
 <body id="top">
@@ -107,7 +116,7 @@
 
           <p class="section-subtitle">Pune's Ultimate Gaming Destination</p>
 
-          <h1 class="h1 title hero-title">Unleash the Gamer in You - High-end PCs, Vibrant Atmosphere, Unlimited Fun!</h1>
+          <h1 class="h1 title hero-title">Vibezone Esports Lounge</h1>
           <a href="#" class="btn" data-btn="" style="--top: 32px; --left: 80px;">Book Your Spot Now</a>
           <div class="hero-banner">
             <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
@@ -123,7 +132,7 @@
         - #ABOUT-US
       -->
 
-      <section class="section news" aria-label="our latest news" id="news">
+      <section class="section news" aria-label="our latest news" id="about-us">
         <div class="container">
 
           <h2 class="h2 section-title" data-reveal="bottom">
@@ -140,7 +149,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-1.jpg" width="600" height="400" loading="lazy" alt="Innovative Business All Over The World." class="img-cover">
+                  <img src="./assets/images/IMG_6279 2.jpeg" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -158,7 +168,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-2.jpg" width="600" height="400" loading="lazy" alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                  <img src="./assets/images/IMG_6326.jpeg" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -176,7 +187,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-3.jpg" width="600" height="400" loading="lazy" alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                  <img src="./assets/images/IMG_6274.jpeg" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -200,7 +212,7 @@
         - #UPCOMING
       -->
 
-      <section class="section upcoming" aria-labelledby="upcoming-label" id="tournament">
+      <section class="section upcoming" aria-labelledby="upcoming-label" id="configuration">
         <div class="container">
 
           <h2 class="h2 section-title" data-reveal="bottom">
@@ -213,7 +225,8 @@
 
               <div class="upcoming-card left has-before" data-reveal="left">
 
-                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy" alt="Purple Death Cadets" class="card-banner">
+                <img src="./assets/images/team-logo-1.png" width="86" height="81" loading="lazy"
+                  alt="Purple Death Cadets" class="card-banner">
 
                 <h3 class="h3 card-title">240Hz Refresh Rate | 27-inch</h3>
 
@@ -223,7 +236,8 @@
 
               <div class="upcoming-card right has-before" data-reveal="right">
 
-                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy" alt="Trigger Brain Squad" class="card-banner">
+                <img src="./assets/images/team-logo-2.png" width="86" height="81" loading="lazy"
+                  alt="Trigger Brain Squad" class="card-banner">
 
                 <h3 class="h3 card-title">NVIDIA RTX 40 Series GPU</h3>
 
@@ -237,7 +251,8 @@
 
               <div class="upcoming-card left has-before" data-reveal="left">
 
-                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy" alt="The Black Hat Hackers" class="card-banner">
+                <img src="./assets/images/team-logo-3.png" width="86" height="81" loading="lazy"
+                  alt="The Black Hat Hackers" class="card-banner">
 
                 <h3 class="h3 card-title">16GB RAM</h3>
 
@@ -247,7 +262,8 @@
 
               <div class="upcoming-card right has-before" data-reveal="right">
 
-                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy" alt="Your Worst Nightmare" class="card-banner">
+                <img src="./assets/images/team-logo-4.png" width="86" height="81" loading="lazy"
+                  alt="Your Worst Nightmare" class="card-banner">
 
                 <h3 class="h3 card-title">Razer BlackShark 7.1 Surround Sound</h3>
 
@@ -287,14 +303,34 @@
       </section>
 
 
-
+      <section class="section" id="pricing">
+        <div id="image-carousel" class="splide container" aria-label="Beautiful Images">
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Pricing & <span class="span">Memberships</span>
+          </h2>
+          <br>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="4.png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="HOURLY PACKS & HAPPY HOURS (2).png" alt="">
+              </li>
+              <li class="splide__slide">
+                <img src="HOURLY PACKS & HAPPY HOURS (3).png" alt="">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
 
       <!-- 
         - #NEWS
       -->
 
-      <section class="section news" aria-label="our latest news" id="news">
+      <section class="section news" aria-label="our latest news" id="blogs">
         <div class="container">
 
           <h2 class="h2 section-title" data-reveal="bottom">
@@ -311,7 +347,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-1.jpg" width="600" height="400" loading="lazy" alt="Innovative Business All Over The World." class="img-cover">
+                  <img src="./assets/images/news-1.jpg" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -353,7 +390,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-2.jpg" width="600" height="400" loading="lazy" alt="How To Start Initiating An Startup In Few Days." class="img-cover">
+                  <img src="./assets/images/news-2.jpg" width="600" height="400" loading="lazy"
+                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -395,7 +433,8 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./assets/images/news-3.jpg" width="600" height="400" loading="lazy" alt="Financial Experts Support Help You To Find Out." class="img-cover">
+                  <img src="./assets/images/news-3.jpg" width="600" height="400" loading="lazy"
+                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
                 </figure>
 
                 <div class="card-content">
@@ -436,6 +475,107 @@
           </ul>
 
         </div>
+      </section>
+
+
+
+      <section id="contact-us" class="section">
+        <div class="container">
+
+
+
+          <div class="contact-inner">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fas fa-phone"></i>
+                  <p>Call : +0011-564-543<br>
+                    Monday-Friday (10am-18pm) </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fas fa-mail-bulk"></i>
+                  <p>Email : cavalr32@gmail.com<br>
+                    Web: www.rockstheme.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="contact-icon text-center">
+                <div class="single-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p> Location : Newyork city<br>
+                    23 house/3 Road </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 30px;">
+            <div style="width: 50%;">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.401433925358!2d73.89138987538645!3d18.48251038260375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb8c5aa75931%3A0xe04170cd20317a88!2sVibezone%20Esports%20Lounge!5e1!3m2!1sen!2sin!4v1724874583158!5m2!1sen!2sin"
+                allowfullscreen="" width="100%" height="100%" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form action="" method="post" class="" aria-label="Contact form" style="width: 50%;">
+
+              <div class="contact-form">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control"
+                          aria-required="true" aria-invalid="false" placeholder="Name" value="" type="text"
+                          name="your-name" id="your-name" /></span>
+                    </p>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p><span class="wpcf7-form-control-wrap" data-name="your-email"><input size="40"
+                          class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control"
+                          aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email"
+                          name="your-email" id="your-email" /></span>
+                    </p>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p><span class="wpcf7-form-control-wrap" data-name="your-subject"><input size="40"
+                          class="wpcf7-form-control wpcf7-text form-control" aria-invalid="false" placeholder="Subject"
+                          value="" type="text" name="your-subject" id="your-subject"/></span>
+                    </p>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea cols="40" rows="7"
+                          class="wpcf7-form-control wpcf7-textarea form-control" id="message" aria-invalid="false"
+                          placeholder="Massage" name="your-message" id="your-message"></textarea></span>
+                    </p>
+                    <div class="help-block with-errors">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <p style="display: flex; justify-content: center;"><button type="submit" id="submit"
+                        class="btn">Send
+                        Message</button>
+                    </p>
+                    <div class="clearfix">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+
+
+
+        </div>
+
+
+
+
       </section>
 
     </article>
@@ -501,23 +641,23 @@
           <ul>
 
             <li>
-              <a href="#" class="footer-link">Tournaments</a>
+              <a href="#home" class="footer-link">Home</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Help Center</a>
+              <a href="#about-us" class="footer-link">About Us</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Privacy and Policy</a>
+              <a href="#configuration" class="footer-link">System Configuration</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Terms of Use</a>
+              <a href="#pricing" class="footer-link">Pricing</a>
             </li>
 
             <li>
-              <a href="#" class="footer-link">Contact Us</a>
+              <a href="#contact-us" class="footer-link">Contact Us</a>
             </li>
 
           </ul>
@@ -547,18 +687,6 @@
 
             <a href="tel:+12345678910" class="contact-link">+1 (234) 567-8910</a>
           </div>
-
-        </div>
-
-        <div class="footer-list">
-
-          <p class="title footer-list-title has-after">Newsletter Signup</p>
-
-          <form action="./index.html" method="get" class="footer-form">
-            <input type="email" name="email_address" required="" placeholder="Your Email" autocomplete="off" class="input-field">
-
-            <button type="submit" class="btn" data-btn="">Subscribe Now</button>
-          </form>
 
         </div>
 
@@ -618,4 +746,5 @@
 
 
 </body>
+
 </html>
