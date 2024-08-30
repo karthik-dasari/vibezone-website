@@ -64,7 +64,7 @@
    * SPACING
    */
 
-  --section-spacing: 60px;
+  --section-spacing: 30px;
 
   /**
    * BOX SHADOW
@@ -418,7 +418,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  padding-block-start: 170px;
+  padding-block-start: 150px;
   text-align: center;
 }
 
@@ -452,7 +452,7 @@ body {
   #UPCOMING
 \*-----------------------------------*/
 
-.upcoming-item:not(:last-child) { margin-block-end: 90px; }
+.upcoming-item:not(:last-child) { margin-block-end: 50px; }
 
 .upcoming-card {
   display: flex;
@@ -898,7 +898,9 @@ body {
 
   .upcoming-time .time { --fontSize-1: 5rem; }
 
-
+  .contact-s-inner{
+    flex-wrap: nowrap !important;
+  }
 
   /**
    * NEWS 
@@ -965,7 +967,7 @@ body {
      * SPACING
      */
 
-    --section-spacing: 100px;
+    --section-spacing: 50px;
 
   }
 
@@ -1076,7 +1078,6 @@ body {
    * HERO
    */
 
-  .hero { padding-block-start: 250px; }
 
   .hero-banner-bg { transform: scale(1.2); }
 
@@ -1194,4 +1195,5 @@ margin-bottom: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }

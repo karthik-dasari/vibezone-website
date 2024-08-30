@@ -130,7 +130,7 @@ new Splide( '#image-carousel', {
   pagination: false,
   gap        : '4rem',
   focus      : 'center',
-  // type       : 'loop',
+  type       : 'loop',
   autoplay   : true,
   interval   : 3000,
   pauseOnHover: true,
